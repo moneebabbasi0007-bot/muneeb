@@ -39,7 +39,7 @@
 }
 
 .navbar a:hover{
-    color: #00abf0; 
+    color: #d4941ef2; 
 }
 
 #menu {
@@ -77,8 +77,25 @@
     font-size: 55px;
     font-weight: 600;
 }
-span{
-    color: #00bcd4;
+.text-change::after{
+    content: "Muneeb";
+    color: #d4941ef2;
+    animation: textchange 6s infinite;
+}
+
+@keyframes textchange{
+    0%{
+        content: "Muneeb";
+    }
+    33%{
+        content: "Web Developer";
+    }
+    66%{
+        content: "Web Designer";
+    }
+    100%{
+        content: "Muneeb";
+    }
 }
 
 .btn-box {
